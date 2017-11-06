@@ -22,5 +22,5 @@ Please keep in mind that hostnames usually contain `.`. You may want to consider
 - Enjoy!
 
 ## Links
-- github: https://github.com/schachr/grafana-dashboards/tree/master/mysql-librenms
-- grafana: https://grafana.com/dashboards/2854
+- [github](https://github.com/schachr/grafana-dashboards/tree/master/mysql-librenms): https://github.com/schachr/grafana-dashboards/tree/master/mysql-librenms
+- [grafana](https://grafana.com/dashboards/2854): https://grafana.com/dashboards/2854
