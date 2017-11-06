@@ -20,3 +20,7 @@ Please keep in mind that hostnames usually contain `.`. You may want to consider
 - configure MySQL App in LibreNMS (http://docs.librenms.org/Extensions/Applications/#mysql)
 - Import Dashboard and select the appropriate values at the top variable list for: *datasource*, *rootdir*, *server*.
 - Enjoy!
+
+## Links
+- github: https://github.com/schachr/grafana-dashboards/tree/master/mysql-librenms
+- grafana: https://grafana.com/dashboards/2854
