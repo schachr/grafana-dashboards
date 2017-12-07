@@ -65,7 +65,7 @@ retentions = 1s:3h
 - Optional but recommended: [Master-Slave Setup](https://github.com/firehol/netdata/wiki/Replication-Overview)
 - Configure netdata to [write to Graphite](https://github.com/firehol/netdata/wiki/netdata-backends)
 - Import Dashboard and select the appropriate values at the top variable list for: *datasource*, *rootdir*, *server*.
-- Adopt refresh interval to fit your needs.
+- Adopt the dashboard's refresh interval to fit your needs.
 - Enjoy!
 
 ## Links
