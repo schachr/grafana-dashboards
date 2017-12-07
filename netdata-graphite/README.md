@@ -6,6 +6,7 @@ Metrics provided by netdata, written into Graphite and displayed via Grafana!
 - It should display the most panels for a default installation of linux. 
 - It's tested on Debian Stretch x64, OSMC (on Raspberry PI2) & armbian (on OrangePi+2E).
 - This dashboard uses templating heavily but as a limitation of grafana it is not possible to hide panels with no data.
+- Special handling of data provided by the use of docker at the collected hosts.
 
 ## Metric Field description
 1. `datasource` = your graphite datasource for this dashboard.
@@ -51,7 +52,7 @@ rewrite ^netdata\.([a-z0-9\_]+)\.(cgroup\_[a-z0-9\_]+)\.(cgroup\_[a-z0-9\_]+\.)+
 
 ## Configuration
 - Optional but recommended: deploy provided rewriting
-- Configure netdata to write to Graphite
+- Configure netdata to write to Graphite (https://github.com/firehol/netdata/wiki/Replication-Overview)
 - Import Dashboard and select the appropriate values at the top variable list for: *datasource*, *rootdir*, *server*.
 - Adopt refresh interval to fit your needs.
 - Enjoy!
