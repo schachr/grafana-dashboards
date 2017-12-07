@@ -56,4 +56,4 @@ rewrite ^netdata\.([a-z0-9\_]+)\.(cgroup\_[a-z0-9\_]+)\.(cgroup\_[a-z0-9\_]+\.)+
 
 ## Links
 - [github](https://github.com/schachr/grafana-dashboards/tree/master/netdata-graphite): https://github.com/schachr/grafana-dashboards/tree/master/netdata-graphite
-- [grafana](https://grafana.com/dashboards/2854): https://grafana.com/dashboards/2854
+- [grafana](https://grafana.com/dashboards/3938): https://grafana.com/dashboards/3938
