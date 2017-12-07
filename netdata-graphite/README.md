@@ -2,7 +2,9 @@
 Metrics provided by netdata, written into Graphite and displayed via Grafana!
 
 ## Compatibility
-netdata v1.8.0
+netdata v1.8.0<br/>
+It should display the most panels for a default installation of linux. It's tested on Debian Stretch x64, OSMC (on Raspberry PI2) & armbian (on OrangePi+2E).<br/>
+This dashboard uses templating heavily but as a limitation of grafana itself it is not possible to hide panels with no data.
 
 ## Metric Field description
 1. `datasource` = your graphite datasource for this dashboard.
