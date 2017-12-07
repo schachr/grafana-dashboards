@@ -2,17 +2,18 @@
 Metrics provided by netdata, written into Graphite and displayed via Grafana!
 
 ## Compatibility
-netdata v1.8.0<br/>
-It should display the most panels for a default installation of linux. It's tested on Debian Stretch x64, OSMC (on Raspberry PI2) & armbian (on OrangePi+2E).<br/>
-This dashboard uses templating heavily but as a limitation of grafana itself it is not possible to hide panels with no data.
+- netdata v1.8.0
+- It should display the most panels for a default installation of linux. 
+- It's tested on Debian Stretch x64, OSMC (on Raspberry PI2) & armbian (on OrangePi+2E).
+- This dashboard uses templating heavily but as a limitation of grafana it is not possible to hide panels with no data.
 
 ## Metric Field description
 1. `datasource` = your graphite datasource for this dashboard.
 1. `rootdir` = also known as prefix, used to summarize metrics of a collector.
 1. `server` = Server Name without `.`. Please see *Rewrites* Section.
 
-### Hidden Metrics
-You can see them in Settings -> Templating.
+### Additional Metrics
+You can see them at the top of the dashboard.
 1. `interface` = Network interfaces
 1. `tc` = Quality of Service
 1. `cpu` = CPUs
@@ -52,6 +53,7 @@ rewrite ^netdata\.([a-z0-9\_]+)\.(cgroup\_[a-z0-9\_]+)\.(cgroup\_[a-z0-9\_]+\.)+
 - Optional but recommended: deploy provided rewriting
 - Configure netdata to write to Graphite
 - Import Dashboard and select the appropriate values at the top variable list for: *datasource*, *rootdir*, *server*.
+- Adopt refresh interval to fit your needs.
 - Enjoy!
 
 ## Links
