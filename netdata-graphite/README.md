@@ -53,7 +53,7 @@ rewrite ^netdata\.([a-z0-9\_]+)\.(cgroup\_[a-z0-9\_]+)\.(cgroup\_[a-z0-9\_]+\.)+
 **Note**: As netdata is designed for live views you may want to configure an aligned storage schema that matches netdata's own interval called `update every` (see [this](https://github.com/firehol/netdata/wiki/Performance) link) as well.
 
 ### Storage Schema example config
-For the default of 1s:
+`storage-schemas.conf` for the default value of netdata's `update every` (1s):
 ```
 [netdata]
 pattern = ^netdata\.
