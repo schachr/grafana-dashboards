@@ -49,10 +49,21 @@ rewrite ^netdata\.([a-z0-9\_]+)\.(cgroup\_[a-z0-9\_]+)\.(cgroup\_[a-z0-9\_]+\.)+
     ;
 ```
 
+## Storage Schema
+**Note**: As netdata is designed for live views you may want to configure an aligned storage schema that matches netdata's own interval called `update every` (see [this](https://github.com/firehol/netdata/wiki/Performance) link) as well.
+
+### Storage Schema example config
+For the default of 1s:
+```
+[netdata]
+pattern = ^netdata\.
+retentions = 1s:3h
+```
 
 ## Configuration
 - Optional but recommended: deploy provided rewriting
-- Configure netdata to write to Graphite (https://github.com/firehol/netdata/wiki/Replication-Overview)
+- Optional but recommended: [Master-Slave Setup](https://github.com/firehol/netdata/wiki/Replication-Overview)
+- Configure netdata to [write to Graphite](https://github.com/firehol/netdata/wiki/netdata-backends)
 - Import Dashboard and select the appropriate values at the top variable list for: *datasource*, *rootdir*, *server*.
 - Adopt refresh interval to fit your needs.
 - Enjoy!
